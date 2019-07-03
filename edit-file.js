@@ -1,13 +1,18 @@
 'use strict';
 
 const fs = require ('fs');
-// const faker = require ('faker');
+const faker = require ('faker');
 const kingleer = process.argv.slice(2);
+const filepath = 'files/'+kingleer;
 
-console.log(kingleer);
+console.log('kingleer is', kingleer);
+console.log('file is', filepath);
+
+
+let fakerData = faker.name.findName();
 
 //fs.writeFile(file, data[, options], callback)
-let write = function(){fs.writeFile('files/test.txt', 'Hello Node.js', (err, data) => {
+let write = function(){fs.writeFile(filepath, fakerData, (err, data) => {
   if (err) throw err;
   console.log('The file has been saved!');
 });
@@ -15,14 +20,12 @@ let write = function(){fs.writeFile('files/test.txt', 'Hello Node.js', (err, dat
 
 
 //fs.readFile(file[, options], callback)
-let read = function(){fs.readFile('files/test.txt', (err, data) => {
+let read = function(){fs.readFile(filepath, (err, data) => {
   if (err) throw err;
   console.log(data.toString());
 });
 }
 
-
-
 read();
-
 write();
+read();
