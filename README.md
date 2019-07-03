@@ -5,41 +5,38 @@
 ### Author: Ai
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
+* [submission PR](https://github.com/401-advanced-javascript-aimurphy/03-Async/pull/5)
 * [![Build Status](https://travis-ci.com/401-advanced-javascript-aimurphy/Lab-03-Async.svg?branch=master)](https://travis-ci.com/401-advanced-javascript-aimurphy/Lab-03-Async)
 
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+* [node fs](https://nodejs.org/dist/latest-v6.x/docs/api/fs.html) (Node.js v6.17.1 Documentation)
+
 
 ### Modules
-#### `modulename.js`
+#### `edit-file.js`, `reader.js`
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
+###### `fs.writeFile(file, data, efcb)`
+efcb = error first callback
+`(err, data) => {
+  if (err) throw err;
+  console.log('The file has been saved!');
+});`
+
+###### `fs.readFile(file, error first efcb)`
 Usage Notes or examples
 
-###### `bar(array) -> array`
-Usage Notes or examples
 
 ### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* `node [program name] [file you want to work on]`
+  * Returns an array of files.
+
   
 #### Tests
 * How do you run tests?
 * What assertions were made?
 * What assertions need to be / should be made?
-
-#### UML
-Link to an image of the UML for your application and response to events
