@@ -6,7 +6,7 @@
 
 ### Links and Resources
 * [submission PR](https://github.com/401-advanced-javascript-aimurphy/03-Async/pull/5)
-* [![Build Status](https://travis-ci.com/401-advanced-javascript-aimurphy/Lab-03-Async.svg?branch=master)](https://travis-ci.com/401-advanced-javascript-aimurphy/Lab-03-Async)
+* [![Build Status](https://travis-ci.com/401-advanced-javascript-aimurphy/03-Async.svg?branch=master)](https://travis-ci.com/401-advanced-javascript-aimurphy/03-Async)
 
 
 #### Documentation
